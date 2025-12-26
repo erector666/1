@@ -1,0 +1,11 @@
+{
+  "name": "Tool Demo Project",
+  "version": "1.0.0",
+  "description": "Demonstrating all available tools",
+  "tools_tested": [
+    "filesystem",
+    "search",
+    "web",
+    "git"
+  ]
+}
