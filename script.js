@@ -1,4 +1,4 @@
-// Smooth scrolling for anchor links
+// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
  anchor.addEventListener('click', function (e) {
  e.preventDefault();
@@ -9,23 +9,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
  block: 'start'
  });
  }
-    });
+ });
 });
 
 // Form submission handling
-document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
  e.preventDefault();
-    alert('Message sent! (This is a demo)');
+    alert('Thank you for your message! We will get back to you soon.');
  this.reset();
 });
 
-// Mobile menu toggle (if needed)
-// const mobileMenuButton = document.createElement('button');
-// mobileMenuButton.className = 'mobile-menu-button';
-// mobileMenuButton.innerHTML = '☰';
-// document.querySelector('.nav').prepend(mobileMenuButton);
+// Add subtle animation on scroll
+const observerOptions = {
+ threshold:0.1,
+ rootMargin: '0px0px -50px0px'
+};
 
-// mobileMenuButton.addEventListener('click', function() {
-// const navLinks = document.querySelector('.nav-links');
-// navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-// });
+const observer = new IntersectionObserver(function(entries) {
+ entries.forEach(entry => {
+ if (entry.isIntersecting) {
+ entry.target.style.opacity = '1';
+ entry.target.style.transform = 'translateY(0)';
+ }
+ });
+}, observerOptions);
+
+// Observe sections for animation
+document.querySelectorAll('section').forEach(section => {
+ section.style.opacity = '0';
+ section.style.transform = 'translateY(20px)';
+ section.style.transition = 'opacity0.6s ease, transform0.6s ease';
+ observer.observe(section);
+});
