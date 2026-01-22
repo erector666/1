@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern workspace">
+            <img src="https://raw.githubusercontent.com/google/material-design-icons/master/png/action/code_black_48dp.png" alt="Google Open Source Code" style="filter: grayscale(100%) brightness(200%);">
         </div>
     </section>
 
@@ -127,29 +127,15 @@
                             <p>San Francisco, CA</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
-                        <div class="error-message" id="nameError"></div>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
-                        <div class="error-message" id="emailError"></div>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                        <div class="error-message" id="messageError"></div>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -158,19 +144,30 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
+                <div class="footer-section">
                     <h3>SimpleWeb</h3>
-                    <p>Making the web simpler, one site at a time.</p>
+                    <p>Making the web simpler, one project at a time.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#features">Features</a>
-                    <a href="#contact">Contact</a>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SimpleWeb. All rights reserved.</p>
+                <p>&copy; 2024 SimpleWeb. Built with ❤️ and open source.</p>
             </div>
         </div>
     </footer>
