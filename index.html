@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Modern Website</title>
+    <title>Modern Web Tools - SimpleWeb</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Material Design Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -16,8 +16,10 @@
             <div class="nav-logo">SimpleWeb</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#clock-section">Clock</a></li>
+                <li><a href="#watch-section">Watch</a></li>
                 <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu" id="mobileMenu">
@@ -31,15 +33,51 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to SimpleWeb</h1>
-            <p>A clean, modern website template for your next project</p>
+            <h1>Modern Web Tools<br>for Everyone</h1>
+            <p>Beautiful, functional components for your next project. Built with clean code and modern design principles.</p>
             <div class="hero-buttons">
-                <a href="#features" class="btn-primary">Get Started</a>
-                <a href="#about" class="btn-secondary">Learn More</a>
+                <a href="#clock-section" class="btn-primary">Explore Clock</a>
+                <a href="#watch-section" class="btn-secondary">Try Watch</a>
+                <a href="#features" class="btn-tertiary">Learn More</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://raw.githubusercontent.com/google/material-design-icons/master/png/action/code_black_48dp.png" alt="Google Open Source Code" style="filter: grayscale(100%) brightness(200%);">
+            <div class="hero-card">
+                <div class="card-header">
+                    <span class="material-icons">access_time</span>
+                    <h3>Real-time Tools</h3>
+                </div>
+                <div class="card-content">
+                    <div class="clock-preview">00:00:00</div>
+                    <div class="watch-preview">⏱️ Stopwatch Ready</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clock Section -->
+    <section id="clock-section" class="clock-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Digital Clock</h2>
+                <p>Beautiful real-time clock with customizable format</p>
+            </div>
+            <div class="clock-container" id="clockContainer">
+                <!-- Clock will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch Section -->
+    <section id="watch-section" class="watch-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Multi-Function Watch</h2>
+                <p>Clock, Stopwatch, Timer & Alarm - All in one</p>
+            </div>
+            <div class="watch-container" id="watchContainer">
+                <!-- Watch will be inserted here by JavaScript -->
+            </div>
         </div>
     </section>
 
@@ -47,27 +85,33 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>About Us</h2>
-                <p>Why choose our solution</p>
+                <h2>Why Choose SimpleWeb?</h2>
+                <p>Built with modern web technologies and best practices</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <h3>Simple & Effective</h3>
-                    <p>We believe in creating websites that are both beautiful and functional. Our approach focuses on user experience, performance, and clean design principles.</p>
+                    <p>We believe in creating web tools that are both beautiful and functional. Our approach focuses on user experience, performance, and clean design principles.</p>
                     <p>Every element is carefully crafted to serve a purpose, ensuring your visitors have the best possible experience.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">Material Design</span>
+                    </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">Projects</div>
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Active Users</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Clients</div>
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Years</div>
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
                     </div>
                 </div>
             </div>
@@ -78,8 +122,8 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Features</h2>
-                <p>What we offer</p>
+                <h2>Key Features</h2>
+                <p>Everything you need for a modern web experience</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -110,6 +154,68 @@
                     <h3>Secure & Reliable</h3>
                     <p>Built with security best practices and reliable infrastructure.</p>
                 </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-icons">update</span>
+                    </div>
+                    <h3>Real-time Updates</h3>
+                    <p>Live clock and timer functionality with precise timing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-icons">code</span>
+                    </div>
+                    <h3>Clean Code</h3>
+                    <p>Well-structured, maintainable code following best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What People Say</h2>
+                <p>Feedback from our users</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The digital clock component is exactly what I needed for my dashboard. Clean, accurate, and easy to integrate!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍💻</div>
+                        <div class="author-info">
+                            <strong>Alex Developer</strong>
+                            <span>Frontend Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Beautiful design and perfect functionality. The multi-function watch is incredibly useful for productivity apps."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩‍💼</div>
+                        <div class="author-info">
+                            <strong>Sarah Designer</strong>
+                            <span>UI/UX Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Outstanding performance and reliability. The code quality is exceptional and the documentation is clear."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨‍🔬</div>
+                        <div class="author-info">
+                            <strong>Mike Tech Lead</strong>
+                            <span>Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -117,52 +223,42 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2>Get in Touch</h2>
-                <p>Have questions? We'd love to hear from you.</p>
-            </div>
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions or feedback? We'd love to hear from you!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
                             <span class="material-icons">email</span>
+                            <span>hello@simpleweb.dev</span>
                         </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>hello@simpleweb.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
+                        <div class="contact-item">
                             <span class="material-icons">location_on</span>
+                            <span>San Francisco, CA</span>
                         </div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>San Francisco, CA</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <span class="material-icons">phone</span>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
+                        <div class="contact-item">
+                            <span class="material-icons">schedule</span>
+                            <span>Mon-Fri: 9AM-6PM</span>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                            <span class="error" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                            <span class="error" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                            <span class="error" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -171,40 +267,31 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-brand">
                     <h3>SimpleWeb</h3>
-                    <p>Creating beautiful, functional websites for businesses and individuals.</p>
+                    <p>Modern web tools for everyone</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#clock-section">Clock</a>
+                    <a href="#watch-section">Watch</a>
+                    <a href="#features">Features</a>
                 </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <span class="material-icons">facebook</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <span class="material-icons">link</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <span class="material-icons">photo_camera</span>
-                        </a>
-                    </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><span class="material-icons">facebook</span></a>
+                    <a href="#" class="social-icon"><span class="material-icons">code</span></a>
+                    <a href="#" class="social-icon"><span class="material-icons">alternate_email</span></a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SimpleWeb. Built with Google open source tools and Material Design.</p>
+                <p>&copy; 2024 SimpleWeb. All rights reserved. Built with ❤️ and modern web technologies.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="clock.js"></script>
+    <script src="watch.js"></script>
 </body>
 </html>
