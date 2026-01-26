@@ -6,6 +6,8 @@
     <title>Simple Modern Website</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -81,22 +83,30 @@
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
+                    <div class="feature-icon">
+                        <span class="material-icons">palette</span>
+                    </div>
                     <h3>Modern Design</h3>
                     <p>Clean, contemporary design that adapts to any device and screen size.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
+                    <div class="feature-icon">
+                        <span class="material-icons">speed</span>
+                    </div>
                     <h3>Fast Performance</h3>
                     <p>Optimized for speed with minimal load times and smooth animations.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📱</div>
+                    <div class="feature-icon">
+                        <span class="material-icons">devices</span>
+                    </div>
                     <h3>Fully Responsive</h3>
                     <p>Looks great on mobile, tablet, and desktop devices.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
+                    <div class="feature-icon">
+                        <span class="material-icons">security</span>
+                    </div>
                     <h3>Secure & Reliable</h3>
                     <p>Built with security best practices and reliable infrastructure.</p>
                 </div>
@@ -114,28 +124,45 @@
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">📧</div>
+                        <div class="contact-icon">
+                            <span class="material-icons">email</span>
+                        </div>
                         <div>
                             <h4>Email</h4>
                             <p>hello@simpleweb.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">📍</div>
+                        <div class="contact-icon">
+                            <span class="material-icons">location_on</span>
+                        </div>
                         <div>
                             <h4>Location</h4>
                             <p>San Francisco, CA</p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <span class="material-icons">phone</span>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
                         <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
                         <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="4" required></textarea>
-                        <button type="submit" class="btn-primary">Send Message</button>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
@@ -146,7 +173,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>SimpleWeb</h3>
-                    <p>Making the web simpler, one project at a time.</p>
+                    <p>Creating beautiful, functional websites for businesses and individuals.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
@@ -159,15 +186,21 @@
                 </div>
                 <div class="footer-section">
                     <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <span class="material-icons">facebook</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <span class="material-icons">link</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <span class="material-icons">photo_camera</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 SimpleWeb. Built with ❤️ and open source.</p>
+                <p>&copy; 2024 SimpleWeb. Built with Google open source tools and Material Design.</p>
             </div>
         </div>
     </footer>
